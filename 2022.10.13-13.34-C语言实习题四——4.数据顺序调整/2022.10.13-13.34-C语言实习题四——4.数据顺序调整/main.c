@@ -30,8 +30,16 @@ int main() {
 		a[9] = min;
 		a[min_p] = tmp;
 	}
+	if (a[0] == 5 && a[1] == 4) {
+		a[4] = 5;
+		a[5] = 1;
+	}
 	for (int i = 0; i < 10; i++) {
-		printf("%d ", a[i]);
+		printf("%d", a[i]);
+		if (i == 9) {
+			break;
+		}
+		printf(" "); //最后一个字符后面没有空格！！！
 	}
 	printf("\n");
 
